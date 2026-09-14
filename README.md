@@ -1,5 +1,7 @@
 # Finova — Day-to-Day Personal Expense & Finance Tracker
 
+> 🚧 **Work in Progress**: This project is currently in active development and will be live soon! 🚀
+>
 > **Take control of your daily financial habits.** Finova is an institutional-grade, modern personal finance tracker built to help users manage, visualize, and optimize their day-to-day out-of-pocket expenses.
 
 ---
