@@ -30,9 +30,12 @@ app.use(
 
 
 
+import userRouter from "./routes/user.routes.js";
+
 const swaggerData = JSON.parse(fs.readFileSync('./swagger-output.json', 'utf-8'));
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerData));
+app.use('/userRouter', userRouter);
 
 
 
