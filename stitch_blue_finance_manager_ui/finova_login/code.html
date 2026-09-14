@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" style="">
+  <svg
+    class="inline-defs-container"
+    aria-hidden="true"
+    style="position: absolute; width: 0; height: 0; overflow: hidden"
+  ></svg
+  ><head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#b4c5ff",
+              "inverse-surface": "#283044",
+              "on-tertiary-container": "#60eeb1",
+              error: "#ba1a1a",
+              background: "#faf8ff",
+              "surface-bright": "#faf8ff",
+              secondary: "#0051d5",
+              "surface-container-high": "#e2e7ff",
+              "surface-dim": "#d2d9f4",
+              "on-primary-fixed": "#001551",
+              "on-surface": "#131b2e",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "inverse-primary": "#b7c4ff",
+              "on-secondary-container": "#fefcff",
+              "on-surface-variant": "#434655",
+              "on-tertiary-fixed": "#002113",
+              surface: "#faf8ff",
+              primary: "#0037b0",
+              "tertiary-container": "#006a48",
+              "surface-container-low": "#f2f3ff",
+              "on-secondary-fixed": "#00174b",
+              "on-primary-fixed-variant": "#0039b5",
+              "secondary-container": "#316bf3",
+              "primary-container": "#1d4ed8",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#b7c4ff",
+              "outline-variant": "#c4c5d7",
+              "on-background": "#131b2e",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#dce1ff",
+              "surface-tint": "#2151da",
+              "tertiary-fixed": "#6ffbbe",
+              "on-secondary-fixed-variant": "#003ea8",
+              "surface-container": "#eaedff",
+              "on-tertiary-fixed-variant": "#005236",
+              "surface-variant": "#dae2fd",
+              outline: "#747686",
+              "on-primary-container": "#cad3ff",
+              "surface-container-highest": "#dae2fd",
+              "secondary-fixed": "#dbe1ff",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#eef0ff",
+              "error-container": "#ffdad6",
+              tertiary: "#004f35",
+              "tertiary-fixed-dim": "#4edea3",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "1rem",
+              "space-md": "1rem",
+              "space-sm": "0.5rem",
+              "space-xl": "2rem",
+              "space-xs": "0.25rem",
+              margin: "2rem",
+              gutter: "1.5rem",
+              "gutter-mobile": "1rem",
+              "space-lg": "1.5rem",
+            },
+            fontFamily: {
+              "body-md": ["Plus Jakarta Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "label-md": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "numeric-metric": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              display: ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "body-md": [
+                "14px",
+                { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-sm": [
+                "20px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-md": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "26px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-sm": [
+                "13px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "numeric-metric": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-lg": [
+                "16px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "label-sm": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "600",
+                },
+              ],
+              display: [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "title-md": [
+                "16px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background font-body-md text-on-surface min-h-screen flex flex-col justify-between"
+  >
+    <header class="w-full py-space-lg flex justify-center items-center">
+      <div class="flex items-center justify-center">
+        <img
+          src="https://lh3.googleusercontent.com/aida/AEtjO1VdSnK245n3jUEM3Qc9xK7WtS0P54G6PrqCEOXscds4zxzLaafnJMfwcvphBqEAJpbeewQfKG8hQUfRj27VPB4TVTRtPyUBK3fpgikK70G9W18mfiNDcGTNdbPt2RUjQrgKe65qNoeSWS2-vH68sjFKb8NgZR9DqaYpMcx090SjwrKtv_mX9EGyXzB81LHzoYnGd5EW3YKikwuKuEXNcniX9fQmnUMsaXqbPoRd_jQwjSYXGJ9EuzpJIQ"
+          alt="Finova Logo"
+          class="h-9 w-auto object-contain"
+        />
+      </div>
+    </header>
+    <main class="flex-1 flex items-center justify-center p-space-md w-full">
+      <div class="w-full max-w-md mx-auto px-space-md py-space-lg">
+        <div
+          class="bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container p-space-lg md:p-space-xl"
+        >
+          <div class="text-center space-y-space-xs mb-space-lg">
+            <h1
+              class="font-headline-md text-headline-md text-on-surface tracking-tight"
+            >
+              Welcome back
+            </h1>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Log in to track your daily expenses
+            </p>
+          </div>
+          <div class="space-y-space-sm">
+            <button
+              class="w-full flex items-center justify-center gap-space-sm h-11 px-space-md rounded-lg border border-surface-container bg-surface-container-lowest text-on-surface font-title-md text-body-sm shadow-sm hover:bg-surface-container-low transition-all duration-150"
+              type="button"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                  fill="#4285F4"
+                ></path>
+                <path
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                  fill="#34A853"
+                ></path>
+                <path
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
+                  fill="#FBBC05"
+                ></path>
+                <path
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
+                  fill="#EA4335"
+                ></path></svg
+              ><span class="">Continue with Google</span></button
+            ><button
+              class="w-full flex items-center justify-center gap-space-sm h-11 px-space-md rounded-lg border border-surface-container bg-surface-container-lowest text-on-surface font-title-md text-body-sm shadow-sm hover:bg-surface-container-low transition-all duration-150"
+              type="button"
+            >
+              <svg
+                class="w-5 h-5 fill-current text-on-surface"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-.98 1.71-.85 2.73.99.08 2.01-.52 2.56-1.23z"
+                ></path></svg
+              ><span class="">Continue with Apple</span>
+            </button>
+          </div>
+          <div class="relative my-space-md flex items-center justify-center">
+            <div class="w-full h-px bg-surface-container"></div>
+            <span
+              class="absolute px-space-md bg-surface-container-lowest font-label-sm text-label-sm text-outline uppercase tracking-wider"
+              >or</span
+            >
+          </div>
+          <form
+            class="space-y-space-md"
+            id="loginForm"
+            onsubmit="event.preventDefault()"
+          >
+            <div class="space-y-space-xs">
+              <label
+                class="block font-label-md text-label-md text-on-surface"
+                for="emailInput"
+                >Email</label
+              >
+              <div class="relative flex items-center">
+                <span
+                  class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none"
+                  >mail</span
+                ><input
+                  class="w-full h-11 pl-10 pr-space-md rounded-lg border border-surface-container bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all duration-150"
+                  id="emailInput"
+                  placeholder="name@example.com"
+                  required=""
+                  type="email"
+                />
+              </div>
+            </div>
+            <div class="space-y-space-xs">
+              <label
+                class="block font-label-md text-label-md text-on-surface"
+                for="passwordInput"
+                >Password</label
+              >
+              <div class="relative flex items-center">
+                <span
+                  class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none"
+                  >lock</span
+                ><input
+                  class="w-full h-11 pl-10 pr-11 rounded-lg border border-surface-container bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all duration-150"
+                  id="passwordInput"
+                  placeholder="••••••••••••"
+                  required=""
+                  type="password"
+                />
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-space-xs">
+              <label
+                class="inline-flex items-center gap-space-sm cursor-pointer select-none"
+                ><input
+                  checked=""
+                  class="w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer"
+                  id="rememberDevice"
+                  type="checkbox"
+                /><span
+                  class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Remember me</span
+                ></label
+              ><a
+                class="font-label-sm text-label-sm text-secondary hover:underline"
+                href="#forgot"
+                >Forgot password?</a
+              >
+            </div>
+            <button
+              class="w-full h-11 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md shadow-md hover:bg-secondary transition-all duration-150 active:scale-[0.99] flex items-center justify-center"
+              id="submitBtn"
+              type="submit"
+            >
+              Log In
+            </button>
+          </form>
+          <div
+            class="mt-space-lg pt-space-md border-t border-surface-container text-center"
+          >
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Don't have an account?
+              <a
+                class="font-title-md text-primary hover:underline"
+                href="#signup"
+                >Sign up</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="w-full py-space-lg text-center font-label-md text-label-md text-on-surface-variant"
+    >
+      <p class="">© 2025 Finova Capital Management LLC. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
